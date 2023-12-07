@@ -11,9 +11,9 @@
         </div>
     </form>
     <ul class="navbar-nav align-items-center ms-auto">
-        <a class="me-3" href="{{ asset('admin/assets/pdf/E-Surat Manual Book.pdf#zoom=50') }}" target="_blank" >
+        {{-- <a class="me-3" href="{{ asset('admin/assets/pdf/E-Surat Manual Book.pdf#zoom=50') }}" target="_blank" >
         Buku Panduan Aplikasi e-surat.kksp.id
-        </a> 
+        </a>  --}}
         <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
             <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 @if (Auth::user()->profile != NULL)
@@ -29,7 +29,6 @@
                     @else
                         <img class="dropdown-user-img" src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}" />
                     @endif
-
                     <div class="dropdown-user-details">
                         <div class="dropdown-user-details-name">{{ Auth::user()->name }}</div>
                         <div class="dropdown-user-details-email">{{ Auth::user()->email }}</div>
